@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 
       post.title = i.at('title').to_str
       post.body = i.at('body').to_str
-      post.author = i.at('author').to_str
+      post.created_at = i.at('created_at').to_str
 
       @posts << post
     end
@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
     require 'nokogiri'
     require 'open-uri'
 
-    url = "http://localhost:8000/external_posts.xml"
+    url = "http://servidor.com.br:8000/external_posts.xml"
     @doc = Nokogiri::XML(open(url))
 
     @posts = []

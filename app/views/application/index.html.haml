@@ -1,6 +1,10 @@
-%h1 Esse é o index
+%h4 Posts recentes...
 
-%p= @io
 %ul
   - @posts.each do |post|
-    %li= post.title
+    %li.post
+      %ul
+        %li.title
+          %h2= post.title
+        %li= post.body
+        %li.created_at= post.created_at

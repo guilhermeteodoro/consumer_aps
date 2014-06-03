@@ -1,0 +1,55 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html, body{
+  font-size: 16px;
+}
+
+body {
+  background: image-url('bg.png') no-repeat 50% top white;
+  font-family: 'Open Sans', sans-serif;;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0
+}
+
+.main {
+  margin: 270px auto 0;
+  width: 990px;
+}
+
+.content {
+  @include border-radius(20px);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+}
+
+.content p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.post {
+  margin-bottom: 30px
+}
+
+.post .title {
+  text-decoration: underline;
+}
+
+.post .created_at {
+  text-align: right;
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+  color: darkGray;
+  font-weight: bold;
+  font-style: italic;
+}

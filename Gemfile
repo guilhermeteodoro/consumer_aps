@@ -12,3 +12,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'haml'
 gem 'nokogiri'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'compass-rails'
